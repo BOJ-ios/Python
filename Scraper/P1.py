@@ -22,4 +22,17 @@ for i in days:
     print(i[0:3], end=' ')
     print(i.count("E"), end=' ')
     print()
+
+animals = ("고양이", "강아지", "말")
+for i in range(3):
+    print(animals[-i], end=' ')
 print()
+
+dic = {
+    '이름': '홍길동',
+    '나이': 18,
+    '키': 188
+}
+dic.setdefault('추가정보', '없음')
+print('이름' in dic)
+print(dic['추가정보'])
