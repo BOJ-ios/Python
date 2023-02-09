@@ -1,13 +1,17 @@
-N = int(input())
-if N == 1:
-    print("1")
+n = int(input())
+count = 2
+_min = 2
+_max = 7
+
+if n == 1:
+    print(1)
 else:
-    _min, _max, count = [2, 7, 2]
     while True:
-        if _min <= N and N <= _max:
-            print(count)
+        if _min <= n and n < _max:
             break
         else:
-            _min += 6 * (count - 1)
-            _max += 6 * count
+            _max += 6*count
+            _min += 6*count-1
             count += 1
+
+print(count)
